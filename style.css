@@ -1,0 +1,140 @@
+/* Общие стили */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+/* Заголовки */
+h1 {
+    font-size: 2.5rem;
+    color: #343a40;
+    margin-bottom: 20px;
+}
+
+/* Кнопки */
+button {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Таблица */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    max-width: 100%; /* Максимальная ширина таблицы */
+    overflow-x: auto; /* Позволяет прокручивать таблицу, если она слишком широкая */
+}
+
+thead {
+    background-color: #f8f9fa;
+}
+
+tbody tr {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+tbody tr:hover {
+    background-color: #e9ecef;
+    color: #343a40;
+}
+
+td, th {
+    padding: 12px;
+    border-bottom: 1px solid #dee2e6;
+    max-width: 150px; /* Максимальная ширина ячеек */
+    max-width: 150px; /* Максимальная ширина ячеек */
+}
+
+td:nth-child(n + 2) {
+    text-align: right;
+}
+
+/* Цвета для положительных и отрицательных значений */
+.positive {
+    color: green;
+}
+
+.negative {
+    color: red;
+}
+
+/* Стили для иконок криптовалют */
+.crypto-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+/* Стили для символов криптовалют */
+.symbol-span {
+    color: #6c757d;
+    margin-left: 5px;
+}
+
+/* Стили для обертки названия криптовалюты */
+.name-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+/* Отступы */
+.container-md {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Типография */
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #495057;
+}
+
+/* Стили для спиннера */
+#loading-spinner {
+    display: none;
+    margin-bottom: 20px;
+}
+
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+}
+
+/* Медиазапросы для адаптивности */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    td, th {
+        padding: 8px;
+    }
+}
+
+
